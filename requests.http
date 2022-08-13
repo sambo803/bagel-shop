@@ -1,0 +1,26 @@
+
+### get bagels index
+GET http://localhost:3000/bagels.json
+### post bagels create
+POST http://localhost:3000/bagels.json
+Content-Type: application/json
+
+{
+  "flavor": "pumkin",
+  "toasted": 1,
+  "topping": "cream_cheese",
+  "price": 3
+}
+### get bagel show
+GET http://localhost:3000/bagels/3.json
+
+### patch bagels update
+PATCH http://localhost:3000/bagels/1.json
+Content-Type: application/json
+
+{
+  "flavor": "everything",
+  "toasted": 1
+}
+### delete bagels destroy
+DELETE http://localhost:3000/bagels/10
